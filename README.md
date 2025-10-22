@@ -36,21 +36,78 @@ See [INSTALLATION.md](INSTALLATION.md) for detailed setup instructions.
 ## 🎮 Components
 
 ### Form Components
-- **TuiButton** - Styled buttons with primary, secondary, and danger variants + pulse animation
-- **TuiInput** - Text input with animated cursor
-- **TuiSelect** - Custom dropdown with full theme control
-- **TuiCheckbox** - Checkboxes with TUI styling
-- **TuiRadio** - Radio button groups
+
+**TuiButton** - Versatile button component with multiple variants (primary, secondary, warning, danger, info), disabled state, and optional pulse animation for attention-grabbing CTAs.
+
+**TuiInput** - Text input field with animated cursor effect, label support, placeholder text, and various input types (text, password, email, etc.).
+
+**TuiSelect** - Custom-styled dropdown select with full theme integration, keyboard navigation, and support for option groups.
+
+**TuiCheckbox** - Checkbox input with TUI styling, label support, and v-model binding for easy form integration.
+
+**TuiRadio** - Radio button groups with consistent styling, keyboard navigation, and support for option arrays.
+
+**TuiSlider** - Range slider component with customizable min/max values, step increments, and real-time value display.
+
+**TuiDatepicker** - Interactive date picker with calendar view, keyboard navigation, and date range selection support.
+
+**TuiOTP** - One-time password input component with auto-focus between fields, paste support, and validation states.
 
 ### Display Components
-- **TuiCard** - Container with optional glow, fade-in, and slide-in animations
-- **TuiText** - Text display with typewriter effect
-- **TuiProgressBar** - Animated progress indicator with segments
-- **TuiTable** - Data table with hover effects
-- **TuiTerminal** - Interactive terminal component with typewriter support
-- **TuiTabs** - Tab navigation system
-- **TuiHeader** - Page header with timestamp
-- **TuiThemeSwitcher** - Theme and display effects control panel
+
+**TuiCard** - Versatile container component with optional title, glowing borders, and animation support (fade-in, slide-in).
+
+**TuiText** - Text display component with optional typewriter effect for character-by-character text animation.
+
+**TuiProgressBar** - Animated progress indicator with segment visualization, labels, and percentage display.
+
+**TuiTable** - Data table component with hover effects, sortable columns, and responsive design.
+
+**TuiTabs** - Tab navigation system with keyboard support, active tab highlighting, and content switching.
+
+**TuiHeader** - Page header component with title, subtitle, and optional timestamp display.
+
+**TuiBadge** - Small status indicator with severity variants (success, error, warning, info) for labels and notifications.
+
+**TuiChip** - Tag/chip component with optional remove functionality, perfect for filters and selected items.
+
+**TuiAvatar** - User avatar component supporting images, initials, or icons with size variants (small, medium, large).
+
+**TuiBanner** - Alert banner component with dismissible option and severity variants for important messages.
+
+**TuiTimeline** - Vertical timeline component for displaying chronological events with icons and descriptions.
+
+**TuiImage** - Themed image component with loading states, fallback support, and responsive sizing.
+
+**TuiIcon** - Icon display component with support for multiple icon sets and size variants.
+
+### Interactive Components
+
+**TuiDialog** - Modal dialog component with confirm/cancel actions, backdrop click handling, and customizable content.
+
+**TuiDropdown** - Dropdown menu component with nested menus, keyboard navigation, and positioning options.
+
+**TuiMenubar** - Desktop-style application menu bar with dropdown menus, keyboard shortcuts, and customizable items.
+
+**TuiToast** - Toast notification system with position control (top/bottom, left/right/center) and severity variants.
+
+**TuiTerminal** - Interactive terminal emulator with command history, typewriter effect, and customizable command handlers.
+
+**TuiTerminalTypewriter** - Specialized terminal with built-in typewriter animation for displaying sequential messages.
+
+**TuiTooltip** - Hover tooltip component with positioning options and custom content support.
+
+**TuiCarousel** - Image carousel/slider with navigation controls, auto-play, and responsive behavior.
+
+### Utility Components
+
+**TuiThemeSwitcher** - Complete theme control panel for switching color schemes (Amber/Green/Greyscale) and toggling visual effects (scanlines, flicker, glow).
+
+## 🧰 Composables
+
+**useToast** - Composable function for programmatically triggering toast notifications with methods for success, error, warning, and info messages.
+
+**useTypewriter** - Composable for implementing typewriter text effects with configurable speed and control methods (start, stop, reset).
 
 ## ✨ Features
 
@@ -196,6 +253,41 @@ font-family: 'VT323', 'Share Tech Mono', monospace;
 ```
 
 **VT323** provides the classic terminal look, while **Share Tech Mono** offers a cleaner alternative. Both fonts are automatically loaded from Google Fonts CDN.
+
+## 📋 Component Quick Reference
+
+| Component | Category | Purpose |
+|-----------|----------|---------|
+| TuiButton | Form | Buttons with variants and pulse animation |
+| TuiInput | Form | Text input with animated cursor |
+| TuiSelect | Form | Dropdown select with theme styling |
+| TuiCheckbox | Form | Checkbox with TUI styling |
+| TuiRadio | Form | Radio button groups |
+| TuiSlider | Form | Range slider with value display |
+| TuiDatepicker | Form | Calendar date picker |
+| TuiOTP | Form | One-time password input |
+| TuiCard | Display | Container with animations |
+| TuiText | Display | Text with typewriter effect |
+| TuiProgressBar | Display | Animated progress indicator |
+| TuiTable | Display | Data table with sorting |
+| TuiTabs | Display | Tab navigation |
+| TuiHeader | Display | Page header with timestamp |
+| TuiBadge | Display | Status indicator labels |
+| TuiChip | Display | Removable tag/filter chips |
+| TuiAvatar | Display | User avatar component |
+| TuiBanner | Display | Alert banner messages |
+| TuiTimeline | Display | Event timeline |
+| TuiImage | Display | Themed image display |
+| TuiIcon | Display | Icon component |
+| TuiDialog | Interactive | Modal dialogs |
+| TuiDropdown | Interactive | Dropdown menus |
+| TuiMenubar | Interactive | Application menu bar |
+| TuiToast | Interactive | Toast notifications |
+| TuiTerminal | Interactive | Terminal emulator |
+| TuiTerminalTypewriter | Interactive | Terminal with typewriter |
+| TuiTooltip | Interactive | Hover tooltips |
+| TuiCarousel | Interactive | Image carousel |
+| TuiThemeSwitcher | Utility | Theme control panel |
 
 ## � Documentation
 
