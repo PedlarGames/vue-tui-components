@@ -33,12 +33,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/PedlarGames/vue-tui-components.git"
   },
   "bugs": {
     "url": "https://github.com/PedlarGames/vue-tui-components/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/PedlarGames/vue-tui-components#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
