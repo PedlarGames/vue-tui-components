@@ -1,6 +1,6 @@
 {
   "name": "vue-tui-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TUI-styled Vue3 components with Pip-Boy aesthetics - retro terminal UI components for Vue 3",
   "type": "module",
   "main": "./dist/vue-tui-components.umd.js",
