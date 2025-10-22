@@ -1,0 +1,56 @@
+{
+  "name": "vue-tui-components",
+  "version": "1.0.1",
+  "description": "TUI-styled Vue3 components with Pip-Boy aesthetics - retro terminal UI components for Vue 3",
+  "type": "module",
+  "main": "./dist/vue-tui-components.umd.js",
+  "module": "./dist/vue-tui-components.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-tui-components.es.js",
+      "require": "./dist/vue-tui-components.umd.js"
+    },
+    "./dist/style.css": "./dist/vue-tui-components.css"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "vue",
+    "vue3",
+    "components",
+    "tui",
+    "terminal",
+    "retro",
+    "ui",
+    "pip-boy",
+    "fallout",
+    "crt",
+    "monochrome"
+  ],
+  "author": "Paul Hedger",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": "https://github.com/PedlarGames/vue-tui-components/issues"
+  },
+  "homepage": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:lib": "vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.0.0",
+    "vue": "^3.4.0"
+  }
+}

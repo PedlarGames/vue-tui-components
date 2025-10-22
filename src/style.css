@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap');
+
+/* Default Theme: Amber */
+:root {
+  /* Global Scale Variable - Change this to scale everything */
+  --tui-scale: 1.5; /* 1.0 = 100%, 1.5 = 150%, 2.0 = 200% */
+  font-size: calc(16px * var(--tui-scale)); /* Base font size scaled */
+  
+  --tui-primary: #ffb000;
+  --tui-secondary: #ff8800;
+  --tui-bg: #0a0a0a;
+  --tui-bg-light: #1a1a1a;
+  --tui-border: #ffb000;
+  --tui-text: #ffb000;
+  --tui-shadow: rgba(255, 176, 0, 0.5);
+  --tui-glow: 0 0 5px var(--tui-primary), 0 0 10px var(--tui-primary);
+  --tui-glow-hover: 0 0 10px var(--tui-primary), 0 0 20px var(--tui-primary);
+  --tui-glow-secondary: 0 0 5px var(--tui-secondary), 0 0 10px var(--tui-secondary);
+  --tui-glow-secondary-hover: 0 0 10px var(--tui-secondary), 0 0 20px var(--tui-secondary);
+  --tui-glow-none: none;
+  --tui-font: 'VT323', 'Share Tech Mono', monospace;
+  --scanline-color: rgba(255, 176, 0, 0.05);
+  
+  /* Transparent color variations */
+  --tui-primary-transparent-5: rgba(255, 176, 0, 0.05);
+  --tui-primary-transparent-10: rgba(255, 176, 0, 0.1);
+  --tui-primary-transparent-20: rgba(255, 176, 0, 0.2);
+  --tui-primary-transparent-30: rgba(255, 176, 0, 0.3);
+  
+  /* Severity Colors - Used across components for consistency */
+  --tui-success: #ffb000; /* Uses primary theme color */
+  --tui-success-transparent-20: rgba(255, 176, 0, 0.2);
+  --tui-success-transparent-30: rgba(255, 176, 0, 0.3);
+  --tui-glow-success: 0 0 5px var(--tui-success), 0 0 10px var(--tui-success);
+  --tui-glow-success-hover: 0 0 10px var(--tui-success), 0 0 20px var(--tui-success);
+  
+  --tui-error: #ff3333;
+  --tui-error-transparent-20: rgba(255, 51, 51, 0.2);
+  --tui-error-transparent-30: rgba(255, 51, 51, 0.3);
+  --tui-glow-error: 0 0 5px var(--tui-error), 0 0 10px var(--tui-error);
+  --tui-glow-error-hover: 0 0 10px var(--tui-error), 0 0 20px var(--tui-error);
+  
+  --tui-warning: #ffff00;
+  --tui-warning-transparent-20: rgba(255, 255, 0, 0.2);
+  --tui-warning-transparent-30: rgba(255, 255, 0, 0.3);
+  --tui-glow-warning: 0 0 5px var(--tui-warning), 0 0 10px var(--tui-warning);
+  --tui-glow-warning-hover: 0 0 10px var(--tui-warning), 0 0 20px var(--tui-warning);
+  
+  --tui-info: #00ccff;
+  --tui-info-transparent-20: rgba(0, 204, 255, 0.2);
+  --tui-info-transparent-30: rgba(0, 204, 255, 0.3);
+  --tui-glow-info: 0 0 5px var(--tui-info), 0 0 10px var(--tui-info);
+  --tui-glow-info-hover: 0 0 10px var(--tui-info), 0 0 20px var(--tui-info);
+}
+
+/* Green Theme */
+:root[data-theme="green"] {
+  --tui-primary: #00ff00;
+  --tui-secondary: #00cc00;
+  --tui-border: #00ff00;
+  --tui-text: #00ff00;
+  --tui-shadow: rgba(0, 255, 0, 0.5);
+  --tui-glow: 0 0 5px var(--tui-primary), 0 0 10px var(--tui-primary);
+  --tui-glow-hover: 0 0 10px var(--tui-primary), 0 0 20px var(--tui-primary);
+  --tui-glow-secondary: 0 0 5px var(--tui-secondary), 0 0 10px var(--tui-secondary);
+  --tui-glow-secondary-hover: 0 0 10px var(--tui-secondary), 0 0 20px var(--tui-secondary);
+  --scanline-color: rgba(0, 255, 0, 0.05);
+  
+  /* Transparent color variations */
+  --tui-primary-transparent-5: rgba(0, 255, 0, 0.05);
+  --tui-primary-transparent-10: rgba(0, 255, 0, 0.1);
+  --tui-primary-transparent-20: rgba(0, 255, 0, 0.2);
+  --tui-primary-transparent-30: rgba(0, 255, 0, 0.3);
+  
+  /* Severity Colors - Success uses primary theme color */
+  --tui-success: #00ff00;
+  --tui-success-transparent-20: rgba(0, 255, 0, 0.2);
+  --tui-success-transparent-30: rgba(0, 255, 0, 0.3);
+  --tui-glow-success: 0 0 5px var(--tui-success), 0 0 10px var(--tui-success);
+  --tui-glow-success-hover: 0 0 10px var(--tui-success), 0 0 20px var(--tui-success);
+  
+  /* Error, Warning, Info remain consistent across themes */
+  --tui-error: #ff3333;
+  --tui-error-transparent-20: rgba(255, 51, 51, 0.2);
+  --tui-error-transparent-30: rgba(255, 51, 51, 0.3);
+  --tui-glow-error: 0 0 5px var(--tui-error), 0 0 10px var(--tui-error);
+  --tui-glow-error-hover: 0 0 10px var(--tui-error), 0 0 20px var(--tui-error);
+  
+  --tui-warning: #ffff00;
+  --tui-warning-transparent-20: rgba(255, 255, 0, 0.2);
+  --tui-warning-transparent-30: rgba(255, 255, 0, 0.3);
+  --tui-glow-warning: 0 0 5px var(--tui-warning), 0 0 10px var(--tui-warning);
+  --tui-glow-warning-hover: 0 0 10px var(--tui-warning), 0 0 20px var(--tui-warning);
+  
+  --tui-info: #00ccff;
+  --tui-info-transparent-20: rgba(0, 204, 255, 0.2);
+  --tui-info-transparent-30: rgba(0, 204, 255, 0.3);
+  --tui-glow-info: 0 0 5px var(--tui-info), 0 0 10px var(--tui-info);
+  --tui-glow-info-hover: 0 0 10px var(--tui-info), 0 0 20px var(--tui-info);
+}
+
+/* Greyscale Theme */
+:root[data-theme="greyscale"] {
+  --tui-primary: #cccccc;
+  --tui-secondary: #999999;
+  --tui-border: #cccccc;
+  --tui-text: #cccccc;
+  --tui-shadow: rgba(204, 204, 204, 0.5);
+  --tui-glow: 0 0 5px var(--tui-primary), 0 0 10px var(--tui-primary);
+  --tui-glow-hover: 0 0 10px var(--tui-primary), 0 0 20px var(--tui-primary);
+  --tui-glow-secondary: 0 0 5px var(--tui-secondary), 0 0 10px var(--tui-secondary);
+  --tui-glow-secondary-hover: 0 0 10px var(--tui-secondary), 0 0 20px var(--tui-secondary);
+  --scanline-color: rgba(204, 204, 204, 0.05);
+  
+  /* Transparent color variations */
+  --tui-primary-transparent-5: rgba(204, 204, 204, 0.05);
+  --tui-primary-transparent-10: rgba(204, 204, 204, 0.1);
+  --tui-primary-transparent-20: rgba(204, 204, 204, 0.2);
+  --tui-primary-transparent-30: rgba(204, 204, 204, 0.3);
+  
+  /* Severity Colors - Desaturated with subtle color hints */
+  --tui-success: #c0d4c0;
+  --tui-success-transparent-20: rgba(192, 212, 192, 0.2);
+  --tui-success-transparent-30: rgba(192, 212, 192, 0.3);
+  --tui-glow-success: 0 0 5px var(--tui-success), 0 0 10px var(--tui-success);
+  --tui-glow-success-hover: 0 0 10px var(--tui-success), 0 0 20px var(--tui-success);
+  
+  --tui-error: #d4b8b8;
+  --tui-error-transparent-20: rgba(212, 184, 184, 0.2);
+  --tui-error-transparent-30: rgba(212, 184, 184, 0.3);
+  --tui-glow-error: 0 0 5px var(--tui-error), 0 0 10px var(--tui-error);
+  --tui-glow-error-hover: 0 0 10px var(--tui-error), 0 0 20px var(--tui-error);
+  
+  --tui-warning: #d4d4b8;
+  --tui-warning-transparent-20: rgba(212, 212, 184, 0.2);
+  --tui-warning-transparent-30: rgba(212, 212, 184, 0.3);
+  --tui-glow-warning: 0 0 5px var(--tui-warning), 0 0 10px var(--tui-warning);
+  --tui-glow-warning-hover: 0 0 10px var(--tui-warning), 0 0 20px var(--tui-warning);
+  
+  --tui-info: #b8c8d4;
+  --tui-info-transparent-20: rgba(184, 200, 212, 0.2);
+  --tui-info-transparent-30: rgba(184, 200, 212, 0.3);
+  --tui-glow-info: 0 0 5px var(--tui-info), 0 0 10px var(--tui-info);
+  --tui-glow-info-hover: 0 0 10px var(--tui-info), 0 0 20px var(--tui-info);
+}
+
+/* Glow effect toggle */
+:root[data-glow="false"] {
+  --tui-glow: none;
+  --tui-glow-hover: none;
+  --tui-glow-secondary: none;
+  --tui-glow-secondary-hover: none;
+  --tui-glow-success: none;
+  --tui-glow-success-hover: none;
+  --tui-glow-error: none;
+  --tui-glow-error-hover: none;
+  --tui-glow-warning: none;
+  --tui-glow-warning-hover: none;
+  --tui-glow-info: none;
+  --tui-glow-info-hover: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--tui-font);
+  background-color: var(--tui-bg);
+  color: var(--tui-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Scanline effect */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent calc(2px * var(--tui-scale)),
+    var(--scanline-color) calc(2px * var(--tui-scale)),
+    var(--scanline-color) calc(4px * var(--tui-scale))
+  );
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+body[data-scanlines="false"]::before {
+  opacity: 0;
+}
+
+/* CRT flicker effect */
+@keyframes flicker {
+  0% { opacity: 0.97; }
+  50% { opacity: 1; }
+  100% { opacity: 0.97; }
+}
+
+body {
+  animation: flicker 0.15s infinite;
+}
+
+body[data-flicker="false"] {
+  animation: none;
+}
+
+/* Screen glow */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  pointer-events: none;
+  z-index: 9998;
+}
+
+#app {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--tui-bg-light);
+  border: 1px solid var(--tui-border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tui-primary);
+  box-shadow: var(--tui-glow);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tui-secondary);
+}

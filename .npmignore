@@ -1,0 +1,18 @@
+# Development files
+node_modules/
+demo/
+
+# Documentation that's not needed in package
+*.md
+!README.md
+
+# Git files
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Build config
+vite.config.js
